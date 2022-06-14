@@ -1,1 +1,1 @@
-# react-native-highlight-multiple-words
+# React-Native-Highlight-Multiple-Words
