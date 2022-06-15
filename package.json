@@ -1,26 +1,40 @@
 {
-  "name": "rnhmws",
-  "version": "0.0.1",
-  "private": true,
+  "name": "react-native-highlight-multiple-words",
+  "version": "0.0.2",
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
+    "build": "tsc",
     "start": "react-native start",
-    "test": "jest",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "prettier": "prettier --write .",
-    "prepare": "npm run build",
     "prepublishOnly": "npm run lint",
     "preversion": "npm run lint",
-    "version": "npm run prettier && git add -A src",
     "postversion": "git push && git push --tags"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avinash2050kumar/react-native-highlight-multiple-words.git"
+  },
+  "license": "ISC",
+  "author": "Avinash kumar <avinash2050kumar@gmail.com>",
   "files": [
-    "lib/**/*"
+    "lib/**/*","src",
+    "android",
+    "ios",
+    "!lib/typescript/example",
+    "!android/build",
+    "!ios/build",
+    "!**/__tests__",
+    "!**/__fixtures__",
+    "!**/__mocks__"
   ],
   "keywords": [
     "rn",
     "react-native",
+    "react",
+    "reactjs",
+    "react-component",
     "react-native-highlight-multiple-words",
     "javascript",
     "typeScript",
@@ -55,6 +69,11 @@
     "react-test-renderer": "17.0.2",
     "typescript": "^4.4.4"
   },
+  "main": "index.js",
+  "module": "lib/module/index",
+  "types": "lib/typescript/typings.d.ts",
+  "react-native": "src/index.js",
+  "source": "src/index.js",
   "resolutions": {
     "@types/react": "^17"
   },
