@@ -5,9 +5,12 @@ import {findAll} from 'highlight-multiple-words';
 import type {TextStyle} from 'react-native';
 import type {FindChunksArg} from 'highlight-multiple-words';
 
-type Props = FindChunksArg & {highlightStyle: TextStyle; style: TextStyle};
+export type HighlighterProps = FindChunksArg & {
+  highlightStyle: TextStyle;
+  style: TextStyle;
+};
 
-const RNHighlighter: React.ComponentType<Props> = ({
+const Highlighter: React.ComponentType<HighlighterProps> = ({
   autoEscape,
   highlightStyle,
   searchWords,
@@ -38,4 +41,4 @@ const RNHighlighter: React.ComponentType<Props> = ({
   );
 };
 
-export default RNHighlighter;
+export default Highlighter;
